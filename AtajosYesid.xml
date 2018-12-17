@@ -49,4 +49,9 @@
       <option name="KOTLIN" value="true" />
     </context>
   </template>
+  <template name="viewToBitmap" value="fun conversorViewABitmap(@NotNull vista: View): Bitmap?{&#10;        var bitmap : Bitmap ? = null&#10;        vista.measure(View.MeasureSpec.UNSPECIFIED,View.MeasureSpec.UNSPECIFIED)&#10;        bitmap = Bitmap.createBitmap(vista.measuredWidth,vista.measuredHeight,Bitmap.Config.ARGB_8888)&#10;        val canvas = Canvas(bitmap)&#10;        vista.layout(0,0,vista.measuredWidth,vista.measuredHeight)&#10;        vista.draw(canvas)&#10;        return bitmap&#10;    }" description="Convierte una view en una imagen bitmap" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="KOTLIN" value="true" />
+    </context>
+  </template>
 </templateSet>
