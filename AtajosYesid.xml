@@ -54,4 +54,9 @@
       <option name="KOTLIN" value="true" />
     </context>
   </template>
+  <template name="lectorSqlAssets" value="/*Lector de sql o documentos crudos*/&#10;private fun leerSqliteAssets(ruta : String): String{&#10;        val sentencias = this.assets.open(ruta)&#10;        return CharStreams.toString(InputStreamReader(sentencias,StandardCharsets.UTF_8))&#10;    }" description="Funcion encargada de leer un archivo .sql desde la carpeta de assets u otra ruta del proyecto" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="KOTLIN" value="true" />
+    </context>
+  </template>
 </templateSet>
